@@ -1,3 +1,4 @@
+import Navbar from '@/components/shared/Navbar/Navbar'
 import './globals.css'
 
 export const metadata = {
@@ -8,7 +9,12 @@ export const metadata = {
 export default function RootLayout ({ children }) {
   return (
     <html lang='en'>
-      <body >{children}</body>
+      <body>
+        <div className='container mx-auto'>
+          <Navbar></Navbar>
+        </div>
+        {children}
+      </body>
     </html>
   )
 }
