@@ -1,5 +1,6 @@
 import Navbar from '@/components/shared/Navbar/Navbar'
 import './globals.css'
+import Footer from '@/components/Footer/Footer'
 
 export const metadata = {
   title: 'Nahid Raz',
@@ -13,7 +14,8 @@ export default function RootLayout ({ children }) {
         <div className='container mx-auto'>
           <Navbar></Navbar>
         </div>
-        {children}
+        <div className='h-screen container mx-auto'>{children}</div>
+        <Footer></Footer>
       </body>
     </html>
   )
