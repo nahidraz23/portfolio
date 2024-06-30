@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Banner = () => {
     return (
-        <div className="flex items-center justify-around">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-around">
             <div className="flex flex-col gap-8">
                 <div>
                     <div className="font-semibold text-3xl">
@@ -16,7 +16,7 @@ const Banner = () => {
                     <p>He crafts responsive websites where technologies meet creativity</p>
                 </div>
                 <div>
-                    <Link href={'/contacts'} className="border-2 px-2 py-1 border-primary-purple"><button>Contact-Me</button></Link>
+                    <Link href={'/contacts'} className="border-2 px-2 py-1 border-primary-purple"><button className="text-white">Contact me</button></Link>
                 </div>
             </div>
             <div>
