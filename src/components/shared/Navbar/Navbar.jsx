@@ -1,17 +1,33 @@
+"use client"
 import React from 'react';
 import logo from '../../../app/icon.ico'
 import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
 
-    const navLinks = (
-        <div className='font-fira-code flex flex-col md:flex-row gap-8 '>
-            <li>Home</li>
-            <li>Works</li>
-            <li>About-Me</li>
-            <li>Contacts</li>
-        </div>
-    )
+   const pathName = usePathname();
+
+    const navLinks = [
+        {
+            title: "Home",
+            path: '/'
+        },
+        {
+            title: "Work",
+            path: '/work'
+        },
+        {
+            title: "About-Me",
+            path: '/about'
+        },
+        {
+            title: "Contacts",
+            path: '/contacts'
+        }
+    ]
+
     return (
         <div className="navbar">
             <div className="navbar-start">
@@ -34,7 +50,7 @@ const Navbar = () => {
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         {
-                            navLinks
+                             navLinks.map(link => <Link key={link.path} href={link.path}>{link.title}</Link>)
                         }
                     </ul>
                 </div>
@@ -46,9 +62,9 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="navbar-end hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal px-1 space-x-8">
                     {
-                        navLinks
+                       navLinks.map(link => <Link key={link.path} href={link.path} className={`${pathName === link.path && 'text-white font-bold border-b-2'}`}>{link.title}</Link>)
                     }
                 </ul>
             </div>

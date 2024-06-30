@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
-import logo from '../../app/icon.ico'
-import { FaGithub } from "react-icons/fa6";
+import logo from '../../../app/icon.ico'
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
     return (
@@ -29,7 +29,7 @@ const Footer = () => {
                         </a>
                         {/* Linkdein */}
                         <a href="">
-                            
+                            <FaLinkedin className='text-2xl hover:text-blue-500'></FaLinkedin>
                         </a>
                     </div>
                 </div>
