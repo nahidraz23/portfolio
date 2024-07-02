@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <div>
+        <div className='mt-36'>
             <hr className='border-1 border-primary-gray' />
             <div className='container mx-auto mt-8 flex justify-between'>
                 <div className='space-y-4'>
