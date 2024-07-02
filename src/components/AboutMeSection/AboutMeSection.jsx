@@ -21,8 +21,8 @@ const AboutMeSection = () => {
             </div>
             <div className="mt-6 ">
                 <Link href={'/about'} className="">
-                    <button className="text-white flex gap-2 items-center border-2 px-2 py-1 border-primary-purple ">
-                        <p>Read more</p>
+                    <button className="flex gap-2 items-center border-2 px-2 py-1 border-primary-purple hover:border-white hover:scale-90">
+                        <p className="text-white">Read more</p>
                         <div>
                             <FaArrowRight></FaArrowRight>
                         </div>

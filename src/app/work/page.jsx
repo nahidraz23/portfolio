@@ -1,9 +1,10 @@
+import WorkPage from '@/components/WorkPage/WorkPage';
 import React from 'react';
 
 const page = () => {
     return (
-        <div>
-            
+        <div className='p-4 md:p-0'>
+            <WorkPage></WorkPage>
         </div>
     );
 };

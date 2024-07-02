@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const ProjectCard = ({ title, src, subTitle, liveLink, gitLink }) => {
     return (
-        <div className="border-2 w-80 hover:border-white hover:cursor-pointer">
+        <div className="border-2 w-80 hover:border-white hover:cursor-pointer hover:-translate-y-2">
             <Image src={src} alt="Project thumbnail" className=" w-80 h-52 border-b-2"></Image>
             <div className="py-4 px-2 mb-2 border-b-2">
                 <p className="text-white text-2xl font-medium">{title}</p>
