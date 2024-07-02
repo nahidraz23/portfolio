@@ -7,7 +7,7 @@ const SkillSection = () => {
             <div>
                 <SectionTitle title={"Skills"}></SectionTitle>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <SkillsCard
                     title={'Languages'}
                     tech={"C C++ JavaScript"}

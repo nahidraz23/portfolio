@@ -14,7 +14,7 @@ const ProjectSection = () => {
           buttonText={"View all"}
         ></SectionTitle>
       </div>
-      <div className="mt-12 flex w-full justify-around">
+      <div className="mt-12 flex flex-col md:flex-row w-full justify-around items-center gap-3">
         <ProjectCard
           title={"Traverse"}
           subTitle={"Tourism Management application"}

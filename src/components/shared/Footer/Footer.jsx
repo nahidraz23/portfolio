@@ -2,12 +2,13 @@ import Image from 'next/image';
 import React from 'react';
 import logo from '../../../app/icon.ico'
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import Link from 'next/link';
 
 const Footer = () => {
     return (
-        <div className='mt-36'>
+        <div className='md:mt-36'>
             <hr className='border-1 border-primary-gray' />
-            <div className='container mx-auto mt-8 flex justify-between'>
+            <div className='container mx-auto mt-8 flex flex-col md:flex-row items-center justify-between'>
                 <div className='space-y-4'>
                     <div className='flex items-center gap-2'>
                         <div>
@@ -17,20 +18,21 @@ const Footer = () => {
                         <p>nzamanraz@gmail.com</p>
                     </div>
                     <div>
-                        <p className='text-white'>Web Developer | MERN</p>
+                        <p className='text-white text-center md:text-left'>Web Developer | MERN</p>
                     </div>
                 </div>
                 <div className=''>
                     <p className='text-2xl font-medium text-white'>Media</p>
                     <div className='flex items-center gap-2 pt-1'>
                         {/* GitHub logo */}
-                        <a href="">
-                            <FaGithub className='text-2xl hover:text-purple-600'></FaGithub>
-                        </a>
+                        <Link href={"https://github.com/nahidraz23"} >
+                            <FaGithub className='text-2xl text-purple-600'></FaGithub>
+                        </Link>
+
                         {/* Linkdein */}
-                        <a href="">
+                        <Link href="https://www.linkedin.com/in/nahidraz23/">
                             <FaLinkedin className='text-2xl hover:text-blue-500'></FaLinkedin>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
