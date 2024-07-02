@@ -1,6 +1,7 @@
 import Link from "next/link";
 import nahidraz from '../../../public/images/nahidrazcover.png'
 import Image from "next/image";
+import { FaDownload } from "react-icons/fa6";
 
 const Banner = () => {
     return (
@@ -15,8 +16,18 @@ const Banner = () => {
                 <div>
                     <p>He crafts responsive websites where technologies meet creativity</p>
                 </div>
-                <div>
-                    <Link href={'/contacts'} className="border-2 px-2 py-1 border-primary-purple"><button className="text-white">Contact me</button></Link>
+                <div className="flex gap-4">
+                    <div>
+                        <Link href={'/contacts'}><button className="text-white border-2 px-2 py-1 border-primary-purple hover:border-white hover:scale-90">Contact me</button></Link>
+                    </div>
+                    <div>
+                        <a href='/Nahiduzzaman_Raz_Resume.pdf' className="" rel="noopener noreferrer" download>
+                            <button className="text-white flex items-center gap-2 border-2 px-2 py-1 border-primary-purple hover:border-white hover:scale-90">
+                                <p className="text-white">Resume</p>
+                                <FaDownload className="text-white"></FaDownload>
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div>

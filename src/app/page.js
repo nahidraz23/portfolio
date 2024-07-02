@@ -1,6 +1,7 @@
 import AboutMeSection from '@/components/AboutMeSection/AboutMeSection'
 import Banner from '@/components/Banner/Banner'
 import ContactSection from '@/components/ContactSection/ContactSection'
+import EducationSection from '@/components/EducationSection/EducationSection'
 import ProjectSection from '@/components/ProjectSection/ProjectSection'
 import SkillSection from '@/components/SkillSection/SkillSection'
 
@@ -25,6 +26,11 @@ export default function Home () {
       {/* About me section */}
       <section>
         <AboutMeSection></AboutMeSection>
+      </section>
+
+      {/* Education section */}
+      <section>
+        <EducationSection></EducationSection>
       </section>
 
       {/* Contact section */}

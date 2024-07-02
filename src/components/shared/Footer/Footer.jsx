@@ -18,7 +18,7 @@ const Footer = () => {
                         <p>nzamanraz@gmail.com</p>
                     </div>
                     <div>
-                        <p className='text-white text-center md:text-left'>Web Developer | MERN</p>
+                        <p className='text-white text-center md:text-left'>Web Developer <span className='text-primary-purple'>|</span> MERN</p>
                     </div>
                 </div>
                 <div className=''>

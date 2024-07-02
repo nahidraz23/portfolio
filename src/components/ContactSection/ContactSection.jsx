@@ -10,7 +10,7 @@ const ContactSection = () => {
                     title={"Contact"}
                 ></SectionTitle>
             </div>
-            <div className="flex flex-col md:flex-row text-center md:text-left">
+            <div className="flex flex-col md:flex-row text-center md:text-left gap-2 md:gap-0">
                 <div>
                     <p className="md:w-2/3">
                         I am open to exploring new opportunities that align with my skills and interests. Please feel free to reach out if you have any questions or requests.
