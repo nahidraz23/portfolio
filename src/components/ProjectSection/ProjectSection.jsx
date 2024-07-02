@@ -10,7 +10,7 @@ const ProjectSection = () => {
     <div>
       <div>
         <SectionTitle
-          title={"Project"}
+          title={"Projects"}
           buttonText={"View all"}
         ></SectionTitle>
       </div>
