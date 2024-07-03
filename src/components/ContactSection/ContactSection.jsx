@@ -36,8 +36,8 @@ const ContactSection = () => {
             </div>
             <div className="">
                 <Link href={'/contacts'} className="">
-                    <button className="flex gap-2 items-center border-2 px-2 py-1 border-primary-purple hover:border-white hover:scale-90">
-                        <p className="text-white">Learn more</p>
+                    <button className="flex gap-2 items-center border-2 px-2 py-1 border-primary-purple hover:border-white hover:scale-90 hover:font-semibold">
+                        <p className="text-white">Get in touch</p>
                         <div>
                             <FaArrowRight></FaArrowRight>
                         </div>

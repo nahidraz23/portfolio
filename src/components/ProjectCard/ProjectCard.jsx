@@ -20,8 +20,8 @@ const ProjectCard = ({ title, src, subTitle, liveLink, gitLink }) => {
                     }
                 </p>
                 <div className="flex gap-4 pl-2 pb-4">
-                    <a href={liveLink} target="_blank"><LiveButton name={"Live"}></LiveButton></a>
-                    <a href={gitLink} target="_blank"><GitHubButton name={"Github"}></GitHubButton></a>
+                    <a href={liveLink} target="_blank"><LiveButton></LiveButton></a>
+                    <a href={gitLink} target="_blank"><GitHubButton></GitHubButton></a>
                 </div>
             </div>
         </div>

@@ -9,7 +9,6 @@ const ContactPage = () => {
     const {
         register,
         handleSubmit,
-        formState: { errors },
     } = useForm();
 
 
@@ -36,7 +35,7 @@ const ContactPage = () => {
     }
 
     return (
-        <div>
+        <div className="">
             <div>
                 <p className="text-3xl font-semibold text-white"><span className="text-primary-purple">/</span>Contacts</p>
                 <p className='text-white mt-4'>Who am i?</p>
@@ -65,38 +64,43 @@ const ContactPage = () => {
                     </div>
                 </div>
             </div>
-            <div className="">
-                <form onSubmit={handleSubmit(onSubmit)}>
-                    <div className="space-y-4 flex flex-col items-center">
-                        <div className="flex  gap-4">
-                            <div className="flex flex-col gap-1">
-                                <div>
-                                    <label htmlFor="name">Name</label>
+            <div className="p-4 md:p-0">
+                <div>
+                    <p className="text-center text-3xl font-semibold my-6"><span className="text-white border-white border-b-2 ">Send me an email</span></p>
+                </div>
+                <div>
+                    <form onSubmit={handleSubmit(onSubmit)}>
+                        <div className="space-y-4 grid grid-cols-1 justify-items-center">
+                            <div className="grid grid-cols-1 gap-4">
+                                <div className="flex flex-col gap-1">
+                                    <div>
+                                        <label htmlFor="name" className="text-white font-semibold">Name</label>
+                                    </div>
+                                    <div>
+                                        <input {...register("name")} className="border-2 md:w-[419px]"></input>
+                                    </div>
                                 </div>
-                                <div>
-                                    <input {...register("name")} className="border-2 bg-none"></input>
+                                <div className="flex flex-col gap-1">
+                                    <div>
+                                        <label htmlFor="email" className="text-white font-semibold">Email</label>
+                                    </div>
+                                    <div>
+                                        <input {...register("email")} className="border-2 md:w-[419px]"></input>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="flex flex-col gap-1">
+                            <div className="space-y-1">
                                 <div>
-                                    <label htmlFor="email">Email</label>
+                                    <label htmlFor="message" className="text-white font-semibold">Message</label>
                                 </div>
                                 <div>
-                                    <input {...register("email")} className="border-2"></input>
+                                    <textarea {...register("message")} cols={40} rows={10} className="resize-none border-2 max-w-full"></textarea>
                                 </div>
                             </div>
+                            <input type="submit" className="border-2 md:w-[419px] border-primary-purple px-2 py-1 cursor-pointer hover:border-white hover:scale-90 hover:text-white hover:font-semibold" />
                         </div>
-                        <div className="space-y-1">
-                            <div>
-                                <label htmlFor="message">Message</label>
-                            </div>
-                            <div>
-                                <textarea {...register("message")} cols={48} rows={10} className="resize-none border-2"></textarea>
-                            </div>
-                        </div>
-                        <input type="submit" className="border-2 border-primary-purple px-2 py-1 cursor-pointer hover:border-white hover:scale-90" />
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
             <Toaster
                 position="top-right"
