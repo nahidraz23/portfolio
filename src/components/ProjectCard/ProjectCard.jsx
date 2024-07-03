@@ -12,7 +12,7 @@ const ProjectCard = ({ title, src, subTitle, liveLink, gitLink }) => {
             </div>
             <div className="space-y-4">
                 <p className="px-2">
-                    React JavaScript MongoDB TaiwindCSS
+                    React JavaScript MongoDB TailwindCSS
                 </p>
                 <p className="px-2">
                     {
@@ -20,8 +20,8 @@ const ProjectCard = ({ title, src, subTitle, liveLink, gitLink }) => {
                     }
                 </p>
                 <div className="flex gap-4 pl-2 pb-4">
-                    <Link href={liveLink}><LiveButton name={"Live"}></LiveButton></Link>
-                    <Link href={gitLink}><GitHubButton name={"Github"}></GitHubButton></Link>
+                    <a href={liveLink} target="_blank"><LiveButton name={"Live"}></LiveButton></a>
+                    <a href={gitLink} target="_blank"><GitHubButton name={"Github"}></GitHubButton></a>
                 </div>
             </div>
         </div>

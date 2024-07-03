@@ -1,4 +1,4 @@
-import { FaDiscord, FaLinkedin } from "react-icons/fa6";
+import { FaArrowRight, FaDiscord, FaLinkedin } from "react-icons/fa6";
 import SectionTitle from "../shared/SectionTitle/SectionTitle";
 import Link from "next/link";
 
@@ -33,6 +33,16 @@ const ContactSection = () => {
                         <p className="hover:text-primary-purple">nahidraz23</p>
                     </div>
                 </div>
+            </div>
+            <div className="">
+                <Link href={'/contacts'} className="">
+                    <button className="flex gap-2 items-center border-2 px-2 py-1 border-primary-purple hover:border-white hover:scale-90">
+                        <p className="text-white">Learn more</p>
+                        <div>
+                            <FaArrowRight></FaArrowRight>
+                        </div>
+                    </button>
+                </Link>
             </div>
         </div >
     );
