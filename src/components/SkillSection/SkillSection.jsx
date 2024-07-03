@@ -22,7 +22,7 @@ const SkillSection = () => {
                 ></SkillsCard>
                 <SkillsCard
                     title={'Frameworks'}
-                    tech={"TailwindCSS React ExpressJS "}
+                    tech={"TailwindCSS React ExpressJS NextJS"}
                 ></SkillsCard>
                 <SkillsCard
                     title={'Tools'}

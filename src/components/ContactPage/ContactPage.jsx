@@ -36,13 +36,13 @@ const ContactPage = () => {
 
     return (
         <div className="">
-            <div>
+            <div className="">
                 <p className="text-3xl font-semibold text-white"><span className="text-primary-purple">/</span>Contacts</p>
                 <p className='text-white mt-4'>Who am i?</p>
             </div>
-            <div className="flex flex-col md:flex-row text-center md:text-left gap-2 md:gap-0 md:mt-12">
+            <div className="flex flex-col md:flex-row text-center md:text-left gap-4 md:gap-0 md:mt-6">
                 <div>
-                    <p className="md:w-2/3">
+                    <p className="md:w-2/3 text-left mt-4 md:mt-0">
                         I am open to exploring new opportunities that align with my skills and interests. Please feel free to reach out if you have any questions or requests.
                     </p>
                 </div>
@@ -71,13 +71,13 @@ const ContactPage = () => {
                 <div>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="space-y-4 grid grid-cols-1 justify-items-center">
-                            <div className="grid grid-cols-1 gap-4">
+                            <div className="space-y-4">
                                 <div className="flex flex-col gap-1">
                                     <div>
                                         <label htmlFor="name" className="text-white font-semibold">Name</label>
                                     </div>
                                     <div>
-                                        <input {...register("name")} className="border-2 md:w-[419px]"></input>
+                                        <input required {...register("name")} className="border-2 w-[408px] md:w-[419px]"></input>
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-1">
@@ -85,7 +85,7 @@ const ContactPage = () => {
                                         <label htmlFor="email" className="text-white font-semibold">Email</label>
                                     </div>
                                     <div>
-                                        <input {...register("email")} className="border-2 md:w-[419px]"></input>
+                                        <input required {...register("email")} className="border-2 w-[408px] md:w-[419px]"></input>
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@ const ContactPage = () => {
                                     <label htmlFor="message" className="text-white font-semibold">Message</label>
                                 </div>
                                 <div>
-                                    <textarea {...register("message")} cols={40} rows={10} className="resize-none border-2 max-w-full"></textarea>
+                                    <textarea required {...register("message")} cols={40} rows={10} className="resize-none border-2 max-w-full"></textarea>
                                 </div>
                             </div>
                             <input type="submit" className="border-2 md:w-[419px] border-primary-purple px-2 py-1 cursor-pointer hover:border-white hover:scale-90 hover:text-white hover:font-semibold" />

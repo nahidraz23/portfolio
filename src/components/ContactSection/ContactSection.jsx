@@ -12,11 +12,11 @@ const ContactSection = () => {
             </div>
             <div className="flex flex-col md:flex-row text-center md:text-left gap-2 md:gap-0">
                 <div>
-                    <p className="md:w-2/3">
+                    <p className="md:w-2/3 text-left">
                         I am open to exploring new opportunities that align with my skills and interests. Please feel free to reach out if you have any questions or requests.
                     </p>
                 </div>
-                <div className="border-2 p-4 space-y-3">
+                <div className="border-2 p-4 space-y-3 mt-4 md:mt-0">
                     <div>
                         <p className="text-white font-semibold">
                             Message here
@@ -34,7 +34,7 @@ const ContactSection = () => {
                     </div>
                 </div>
             </div>
-            <div className="">
+            <div className="mt-6 md:mt-0">
                 <Link href={'/contacts'} className="">
                     <button className="flex gap-2 items-center border-2 px-2 py-1 border-primary-purple hover:border-white hover:scale-90 hover:font-semibold">
                         <p className="text-white">Get in touch</p>

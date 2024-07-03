@@ -11,13 +11,13 @@ const ProjectCard = ({ title, src, subTitle, liveLink, gitLink }) => {
                 <p className="text-white text-2xl font-medium">{title}</p>
             </div>
             <div className="space-y-4">
-                <p className="px-2">
-                    React JavaScript MongoDB TailwindCSS
-                </p>
-                <p className="px-2">
+                <p className="px-2 text-white">
                     {
                         subTitle
                     }
+                </p>
+                <p className="px-2">
+                    React JavaScript MongoDB TailwindCSS
                 </p>
                 <div className="flex gap-4 pl-2 pb-4">
                     <a href={liveLink} target="_blank"><LiveButton></LiveButton></a>

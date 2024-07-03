@@ -4,6 +4,8 @@ import ProjectCard from "../ProjectCard/ProjectCard";
 import TraverseCover from "../../../public/images/Traverse.png";
 import UnitedUplift from "../../../public/images/United_Uplift.png";
 import KlinCraft from "../../../public/images/KlinCraft.png";
+import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa6";
 
 const ProjectSection = () => {
   return (
@@ -36,6 +38,14 @@ const ProjectSection = () => {
           liveLink={"https://klin-craft.web.app/"}
           gitLink={"https://github.com/nahidraz23/klin-craft-client"}
         ></ProjectCard>
+      </div>
+      <div className="flex justify-center md:hidden">
+        <Link href={'/work'}>
+          <button className='font-medium text-white mt-6 px-2 py-1 flex items-center gap-2 border-2 border-primary-purple hover:border-white hover:scale-90 hover:font-semibold'>
+            <p>Browse all</p>
+            <FaArrowRight></FaArrowRight>
+          </button>
+        </Link>
       </div>
     </div>
   );

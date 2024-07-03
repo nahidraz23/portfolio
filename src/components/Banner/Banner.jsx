@@ -8,7 +8,7 @@ const Banner = () => {
         <div className="flex flex-col-reverse md:flex-row items-center justify-around">
             <div className="flex flex-col gap-8">
                 <div>
-                    <div className="font-semibold text-3xl">
+                    <div className="font-semibold text-3xl mt-6 md:mt-0">
                         <p>I am <span className="text-primary-purple">Nahiduzzaman Raz</span></p>
                         <p><span className="text-primary-purple">Nahid Raz</span> in short</p>
                     </div>
