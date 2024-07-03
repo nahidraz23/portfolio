@@ -3,7 +3,7 @@ import SkillsCard from '../shared/SkillsCard/SkillsCard';
 
 const AboutPage = () => {
     return (
-        <div className='md:space-y-12'>
+        <div className='space-y-6 md:space-y-12'>
             <div>
                 <p className="text-3xl font-semibold text-white"><span className="text-primary-purple">/</span>About-me</p>
                 <p className='text-white mt-4'>Who am i?</p>
@@ -19,7 +19,7 @@ const AboutPage = () => {
                     Transforming my creativity and knowledge into a websites has been my passion for over a year. I always strive to learn about the newest technologies and frameworks.
                 </p>
             </div>
-            <div className='md:space-y-12'>
+            <div className='space-y-6 md:space-y-12'>
                 <div>
                     <p className="text-3xl font-semibold text-white"><span className="text-primary-purple">#</span>Skills</p>
                 </div>
@@ -46,7 +46,7 @@ const AboutPage = () => {
                     ></SkillsCard>
                 </div>
             </div>
-            <div>
+            <div className='space-y-6'>
                 <div>
                     <p className="text-3xl font-semibold text-white"><span className="text-primary-purple">#</span>My-fun-facts</p>
                 </div>
