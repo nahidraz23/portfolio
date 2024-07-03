@@ -5,7 +5,7 @@ import KlinCraft from "../../../public/images/KlinCraft.png";
 
 const WorkPage = () => {
     return (
-        <div className="mt-12">
+        <div className="">
             <div>
                 <p className="text-3xl font-semibold text-white"><span className="text-primary-purple">/</span>Projects</p>
                 <small>List of my projects</small>
