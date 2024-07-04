@@ -1,7 +1,6 @@
 import Image from "next/image";
 import LiveButton from "../shared/LiveButton/LiveButton";
 import GitHubButton from "../shared/GitHubButton/GitHubButton";
-import Link from "next/link";
 
 const ProjectCard = ({ title, src, subTitle, liveLink, gitLink }) => {
     return (

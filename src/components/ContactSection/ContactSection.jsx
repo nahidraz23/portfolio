@@ -1,6 +1,10 @@
+"use client";
 import { FaArrowRight, FaDiscord, FaLinkedin } from "react-icons/fa6";
 import SectionTitle from "../shared/SectionTitle/SectionTitle";
 import Link from "next/link";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const ContactSection = () => {
     return (

@@ -1,4 +1,8 @@
+"use client";
 import SectionTitle from "../shared/SectionTitle/SectionTitle";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const EducationSection = () => {
     return (
