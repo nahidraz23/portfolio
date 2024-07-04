@@ -4,9 +4,19 @@ import SectionTitle from "../shared/SectionTitle/SectionTitle";
 import Link from "next/link";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-Aos.init();
+import { useEffect } from "react";
 
 const ContactSection = () => {
+    useEffect(() => {
+        Aos.init({
+            once: true,
+        })
+    }, [])
+
+    useEffect(() => {
+        Aos.refresh()
+    }, [])
+
     return (
         <div>
             <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">

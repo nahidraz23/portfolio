@@ -1,11 +1,20 @@
 "use client"
+import { useEffect } from "react";
 import SectionTitle from "../shared/SectionTitle/SectionTitle";
 import SkillsCard from "../shared/SkillsCard/SkillsCard";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-Aos.init();
 
 const SkillSection = () => {
+    useEffect(() => {
+        Aos.init({
+            once: true,
+        })
+    }, [])
+
+    useEffect(() => {
+        Aos.refresh()
+    }, [])
     return (
         <div>
             <div data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import SectionTitle from "../shared/SectionTitle/SectionTitle";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import TraverseCover from "../../../public/images/Traverse.png";
@@ -9,9 +9,18 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-Aos.init();
 
-const ProjectSection = () => {  
+const ProjectSection = () => {
+  useEffect(() => {
+    Aos.init({
+      once: true,
+    })
+  }, [])
+
+  useEffect(() => {
+    Aos.refresh()
+  }, [])
+
   return (
     <div >
       <div data-aos="fade-right" data-aos-duration="1000">
