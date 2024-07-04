@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import SectionTitle from "../shared/SectionTitle/SectionTitle";
 import ProjectCard from "../ProjectCard/ProjectCard";
@@ -6,17 +7,20 @@ import UnitedUplift from "../../../public/images/United_Uplift.png";
 import KlinCraft from "../../../public/images/KlinCraft.png";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
-const ProjectSection = () => {
+const ProjectSection = () => {  
   return (
-    <div>
-      <div>
+    <div >
+      <div data-aos="fade-right" data-aos-duration="1000">
         <SectionTitle
           title={"Projects"}
           buttonText={"View all"}
         ></SectionTitle>
       </div>
-      <div className="mt-12 flex flex-col md:flex-row w-full justify-around items-center gap-3">
+      <div className="mt-12 flex flex-col md:flex-row w-full justify-around items-center gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000">
         <ProjectCard
           title={"Traverse"}
           subTitle={"Tourism Management application"}

@@ -58,7 +58,7 @@ const Navbar = () => {
                     <div>
                         <Image src={logo} alt='Nahid Raz logo'></Image>
                     </div>
-                    <h1 className="text-xl font-fira-code text-white">Nahid Raz</h1>
+                    <Link href={'/'} className="text-xl font-fira-code text-white">Nahid Raz</Link>
                 </div>
             </div>
             <div className="navbar-end hidden lg:flex">

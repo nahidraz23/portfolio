@@ -1,13 +1,17 @@
+"use client"
 import SectionTitle from "../shared/SectionTitle/SectionTitle";
 import SkillsCard from "../shared/SkillsCard/SkillsCard";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const SkillSection = () => {
     return (
         <div>
-            <div>
+            <div data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
                 <SectionTitle title={"Skills"}></SectionTitle>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
                 <SkillsCard
                     title={'Languages'}
                     tech={"C C++ JavaScript"}
