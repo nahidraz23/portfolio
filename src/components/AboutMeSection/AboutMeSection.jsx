@@ -2,9 +2,9 @@
 import Link from "next/link";
 import SectionTitle from "../shared/SectionTitle/SectionTitle";
 import { FaArrowRight } from "react-icons/fa6";
-import AOS from 'aos';
+import Aos from 'aos';
 import 'aos/dist/aos.css';
-AOS.init();
+Aos.init();
 
 const AboutMeSection = () => {
     return (

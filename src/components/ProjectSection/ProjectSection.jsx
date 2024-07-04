@@ -7,9 +7,9 @@ import UnitedUplift from "../../../public/images/United_Uplift.png";
 import KlinCraft from "../../../public/images/KlinCraft.png";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
-import AOS from 'aos';
+import Aos from 'aos';
 import 'aos/dist/aos.css';
-AOS.init();
+Aos.init();
 
 const ProjectSection = () => {  
   return (

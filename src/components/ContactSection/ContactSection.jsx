@@ -2,9 +2,9 @@
 import { FaArrowRight, FaDiscord, FaLinkedin } from "react-icons/fa6";
 import SectionTitle from "../shared/SectionTitle/SectionTitle";
 import Link from "next/link";
-import AOS from 'aos';
+import Aos from 'aos';
 import 'aos/dist/aos.css';
-AOS.init();
+Aos.init();
 
 const ContactSection = () => {
     return (
