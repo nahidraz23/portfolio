@@ -11,8 +11,6 @@ const ContactPage = () => {
         handleSubmit,
     } = useForm();
 
-
-
     const onSubmit = data => {
 
         const templateParams = {
