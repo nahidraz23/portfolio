@@ -3,6 +3,8 @@ import TraverseCover from "../../../public/images/Traverse.png";
 import UnitedUplift from "../../../public/images/United_Uplift.png";
 import KlinCraft from "../../../public/images/KlinCraft.png";
 import siyaahahtravel from "../../../public/images/siyaahahtravel.png";
+import hockeys from "../../../public/images/hockeys.png";
+import ticketsolution from "../../../public/images/ticketsolution.png";
 
 const WorkPage = () => {
     return (
@@ -20,7 +22,7 @@ const WorkPage = () => {
                         title={"Traverse"}
                         subTitle={"Tourism Management application"}
                         src={TraverseCover}
-                        tech={"React JavaScript MongoDB TailwindCSS"}
+                        tech={"ReactJS TailwindCSS NodeJS ExpressJS MongoDB"}
                         liveLink={"https://traverse-decaf.web.app/"}
                         gitLink={"https://github.com/nahidraz23/traverse-client"}
                     ></ProjectCard>
@@ -28,7 +30,7 @@ const WorkPage = () => {
                         title={"United Ulift"}
                         subTitle={"Volunteer Management website"}
                         src={UnitedUplift}
-                        tech={"React JavaScript MongoDB TailwindCSS"}
+                        tech={"ReactJS TailwindCSS NodeJS ExpressJS MongoDB"}
                         liveLink={"https://united-uplift.web.app/"}
                         gitLink={"https://github.com/nahidraz23/united-uplift-client"}
                     ></ProjectCard>
@@ -36,9 +38,9 @@ const WorkPage = () => {
                         title={"Klin Craft"}
                         subTitle={"Pottery Item shop website"}
                         src={KlinCraft}
-                        tech={"React JavaScript MongoDB TailwindCSS"}
-                        liveLink={"https://klin-craft.web.app/"}
-                        gitLink={"https://github.com/nahidraz23/klin-craft-client"}
+                        tech={"ReactJS TailwindCSS ExpressJS MongoDB"}
+                        liveLink={"https://nahidraz23.github.io/ticket-solution/"}
+                        gitLink={"https://github.com/nahidraz23/ticket-solution"}
                     ></ProjectCard>
                 </div>
             </div>
@@ -52,6 +54,22 @@ const WorkPage = () => {
                         subTitle={"Tourism Landing Page"}
                         src={siyaahahtravel}
                         tech={"HTML5 CSS"}
+                        liveLink={"https://nahidraz23.github.io/Siyaahah-Travel/"}
+                        gitLink={"https://github.com/nahidraz23/Siyaahah-Travel"}
+                    ></ProjectCard>
+                    <ProjectCard
+                        title={"Hockey's"}
+                        subTitle={"Sports Club Landing Page"}
+                        src={hockeys}
+                        tech={"HTML5 TailwindCSS"}
+                        liveLink={"https://nahidraz23.github.io/hockeys/"}
+                        gitLink={"https://github.com/nahidraz23/hockeys"}
+                    ></ProjectCard>
+                    <ProjectCard
+                        title={"Ticket Solution"}
+                        subTitle={"Online Ticket System"}
+                        src={ticketsolution}
+                        tech={"HTML5 TailwindCSS JavaScript"}
                         liveLink={"https://nahidraz23.github.io/Siyaahah-Travel/"}
                         gitLink={"https://github.com/nahidraz23/Siyaahah-Travel"}
                     ></ProjectCard>

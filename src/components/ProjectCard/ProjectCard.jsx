@@ -4,7 +4,7 @@ import GitHubButton from "../shared/GitHubButton/GitHubButton";
 
 const ProjectCard = ({ title, src, subTitle, liveLink, gitLink, tech }) => {
     return (
-        <div className="border-2 w-80 hover:border-white hover:cursor-pointer hover:-translate-y-2">
+        <div className="border-b-2 w-80 hover:border-white hover:cursor-pointer hover:scale-105">
             <Image src={src} alt="Project thumbnail" className=" w-80 h-52 border-b-2"></Image>
             <div className="py-4 px-2 mb-2 border-b-2">
                 <p className="text-white text-2xl font-medium">{title}</p>
