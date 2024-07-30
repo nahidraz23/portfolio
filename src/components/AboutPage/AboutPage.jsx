@@ -34,11 +34,11 @@ const AboutPage = () => {
                     ></SkillsCard>
                     <SkillsCard
                         title={'Other'}
-                        tech={"HTML CSS NodeJS"}
+                        tech={"HTML CSS React NodeJS"}
                     ></SkillsCard>
                     <SkillsCard
                         title={'Frameworks'}
-                        tech={"TailwindCSS React ExpressJS NextJS"}
+                        tech={"TailwindCSS ExpressJS NextJS"}
                     ></SkillsCard>
                     <SkillsCard
                         title={'Tools'}
