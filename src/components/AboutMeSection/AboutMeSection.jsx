@@ -27,7 +27,7 @@ const AboutMeSection = () => {
                     Hello, i’m <strong className="text-white">Nahid Raz</strong>.
                 </p>
                 <p>
-                    I’m a <strong className="text-white">web developer</strong> based in Dhaka, Bangladesh. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.
+                    I’m a <strong className="text-white">web developer</strong> based in Bangladesh. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.
                 </p>
                 <p>
                     Transforming my creativity and knowledge into a websites has been my passion for over a year. I always strive to learn about the newest technologies and frameworks.

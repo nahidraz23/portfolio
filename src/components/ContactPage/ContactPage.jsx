@@ -64,7 +64,7 @@ const ContactPage = () => {
             </div>
             <div className="p-4 md:p-0">
                 <div>
-                    <p className="text-center text-3xl font-semibold my-6"><span className="text-white border-white border-b-2 ">Send me an email</span></p>
+                    <p className="text-center text-3xl font-semibold my-6"><span className="text-white border-primary-purple border-b-2 ">Send me an email</span></p>
                 </div>
                 <div>
                     <form onSubmit={handleSubmit(onSubmit)}>
@@ -72,7 +72,7 @@ const ContactPage = () => {
                             <div className="space-y-4">
                                 <div className="flex flex-col gap-1">
                                     <div>
-                                        <label htmlFor="name" className="text-white font-semibold">Name</label>
+                                        <label htmlFor="name" className="text-white font-semibold">Your Name</label>
                                     </div>
                                     <div>
                                         <input required {...register("name")} className="border-2 w-[408px] md:w-[419px]"></input>
@@ -80,7 +80,7 @@ const ContactPage = () => {
                                 </div>
                                 <div className="flex flex-col gap-1">
                                     <div>
-                                        <label htmlFor="email" className="text-white font-semibold">Email</label>
+                                        <label htmlFor="email" className="text-white font-semibold">Your Email</label>
                                     </div>
                                     <div>
                                         <input required {...register("email")} className="border-2 w-[408px] md:w-[419px]"></input>

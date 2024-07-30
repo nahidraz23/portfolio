@@ -2,7 +2,7 @@ import Image from "next/image";
 import LiveButton from "../shared/LiveButton/LiveButton";
 import GitHubButton from "../shared/GitHubButton/GitHubButton";
 
-const ProjectCard = ({ title, src, subTitle, liveLink, gitLink }) => {
+const ProjectCard = ({ title, src, subTitle, liveLink, gitLink, tech }) => {
     return (
         <div className="border-2 w-80 hover:border-white hover:cursor-pointer hover:-translate-y-2">
             <Image src={src} alt="Project thumbnail" className=" w-80 h-52 border-b-2"></Image>
@@ -16,7 +16,7 @@ const ProjectCard = ({ title, src, subTitle, liveLink, gitLink }) => {
                     }
                 </p>
                 <p className="px-2">
-                    React JavaScript MongoDB TailwindCSS
+                    {tech}
                 </p>
                 <div className="flex gap-4 pl-2 pb-4">
                     <a href={liveLink} target="_blank"><LiveButton></LiveButton></a>
