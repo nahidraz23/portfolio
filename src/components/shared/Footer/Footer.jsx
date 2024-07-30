@@ -1,9 +1,12 @@
+"use client"
 import Image from 'next/image';
 import React from 'react';
 import logo from '../../../app/icon.ico'
-import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Link from 'next/link';
 
 const Footer = () => {
+
     return (
         <div className='md:mt-36'>
             <hr className='border-1 border-primary-gray' />
@@ -24,14 +27,14 @@ const Footer = () => {
                     <p className='text-2xl font-medium text-white'>Media</p>
                     <div className='flex items-center gap-2 pt-1'>
                         {/* GitHub logo */}
-                        <a target='_blank' href={"https://github.com/nahidraz23"} >
-                            <FaGithub className='text-2xl text-purple-600'></FaGithub>
-                        </a>
+                        <Link target='_blank' href={"https://github.com/nahidraz23"} >
+                            <FaGithub  className='text-2xl hover:text-purple-600'></FaGithub>
+                        </Link>
 
                         {/* Linkdein */}
-                        <a target='_blank' href="https://www.linkedin.com/in/nahidraz23/">
+                        <Link target='_blank' href="https://www.linkedin.com/in/nahidraz23/">
                             <FaLinkedin className='text-2xl hover:text-blue-500'></FaLinkedin>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

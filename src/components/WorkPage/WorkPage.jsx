@@ -15,7 +15,7 @@ const WorkPage = () => {
             </div>
             <div>
                 <div>
-                    <p className="font-medium text-3xl text-white mt-12"><span className="text-primary-purple">#</span>Complete apps</p>
+                    <p className="font-medium text-3xl text-white mt-12"><span className="text-primary-purple">#</span>Complete app</p>
                 </div>
                 <div className="mt-12 flex flex-col md:flex-row w-full justify-around items-center gap-3">
                     <ProjectCard
