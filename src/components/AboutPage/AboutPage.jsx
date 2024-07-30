@@ -13,10 +13,13 @@ const AboutPage = () => {
                     Hello, i’m <strong className='text-white'>Nahid Raz</strong>.
                 </p>
                 <p>
-                    I’m a <strong className='text-white'>web developer</strong> based in Dhaka, Bangladesh. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.
+                    I’m a <strong className='text-white'>web developer</strong> based in Bangladesh. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.
                 </p>
                 <p>
                     Transforming my creativity and knowledge into a websites has been my passion for over a year. I always strive to learn about the newest technologies and frameworks.
+                </p>
+                <p>
+                    My eventual <strong className='text-white'>career goal</strong> is to become a qualified and experienced <strong className='text-white'>software engineer</strong>.
                 </p>
             </div>
             <div className='space-y-6 md:space-y-12'>
