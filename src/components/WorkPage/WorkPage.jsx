@@ -39,8 +39,8 @@ const WorkPage = () => {
                         subTitle={"Pottery Item shop website"}
                         src={KlinCraft}
                         tech={"ReactJS TailwindCSS ExpressJS MongoDB"}
-                        liveLink={"https://nahidraz23.github.io/ticket-solution/"}
-                        gitLink={"https://github.com/nahidraz23/ticket-solution"}
+                        liveLink={"https://klin-craft.web.app/"}
+                        gitLink={"https://github.com/nahidraz23/klin-craft-client"}
                     ></ProjectCard>
                 </div>
             </div>
@@ -67,11 +67,11 @@ const WorkPage = () => {
                     ></ProjectCard>
                     <ProjectCard
                         title={"Ticket Solution"}
-                        subTitle={"Online Ticket System"}
+                        subTitle={"Online Ticket Booking System"}
                         src={ticketsolution}
                         tech={"HTML5 TailwindCSS JavaScript"}
-                        liveLink={"https://nahidraz23.github.io/Siyaahah-Travel/"}
-                        gitLink={"https://github.com/nahidraz23/Siyaahah-Travel"}
+                        liveLink={"https://nahidraz23.github.io/ticket-solution/"}
+                        gitLink={"https://github.com/nahidraz23/ticket-solution"}
                     ></ProjectCard>
                 </div>
             </div>
