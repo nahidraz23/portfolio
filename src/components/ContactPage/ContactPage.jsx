@@ -52,7 +52,7 @@ const ContactPage = () => {
                     </div>
                     <div className="flex items-center justify-center md:justify-start gap-2">
                         <FaLinkedin></FaLinkedin>
-                        <Link href={"https://www.linkedin.com/in/nahidraz23/"}>
+                        <Link target="_blank" href={"https://www.linkedin.com/in/nahidraz23/"}>
                             <p className="hover:text-primary-purple">nahidraz23</p>
                         </Link>
                     </div>
