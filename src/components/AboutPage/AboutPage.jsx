@@ -47,7 +47,6 @@ const AboutPage = () => {
                         title={'Tools'}
                         tech={"VSCode Figma Git GitHub Vercel Firebase"}
                     ></SkillsCard>
-                    console.log()
                 </div>
             </div>
             <div className='space-y-6'>
