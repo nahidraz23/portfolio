@@ -13,7 +13,7 @@ export default function RootLayout ({ children }) {
   
   return (
     <html lang='en'>
-      <body className='hide-scrollbar ' >
+      <body className='scroller' >
         <AnimatedCursor
           innerSize={8}
           outerSize={35}
