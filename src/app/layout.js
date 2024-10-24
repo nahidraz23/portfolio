@@ -3,17 +3,16 @@ import './globals.css'
 import Footer from '@/components/shared/Footer/Footer'
 import AnimatedCursor from 'react-animated-cursor'
 
-
 export const metadata = {
   title: 'Nahid Raz',
   description: 'Nahiduzzaman Raz Portfolio'
 }
 
 export default function RootLayout ({ children }) {
-  
+
   return (
     <html lang='en'>
-      <body className='scroller' >
+      <body className='scroller'>
         <AnimatedCursor
           innerSize={8}
           outerSize={35}

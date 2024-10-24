@@ -2,7 +2,8 @@
 import Image from 'next/image';
 import React from 'react';
 import logo from '../../../app/icon.ico'
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
 import Link from 'next/link';
 
 const Footer = () => {
@@ -33,7 +34,7 @@ const Footer = () => {
 
                         {/* Linkdein */}
                         <Link target='_blank' href="https://www.linkedin.com/in/nahidraz23/">
-                            <FaLinkedin className='text-2xl hover:text-blue-500'></FaLinkedin>
+                            <FaLinkedin className='text-2xl '></FaLinkedin>
                         </Link>
                     </div>
                 </div>

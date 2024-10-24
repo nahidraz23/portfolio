@@ -39,3 +39,7 @@ body {
   background: white;
   transform-origin: 0%;
 }
+
+.Typewriter__cursor {
+  color: white;
+}
