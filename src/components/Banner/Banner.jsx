@@ -1,5 +1,5 @@
 import Link from "next/link";
-import nahidraz from '../../../public/images/nahidrazcover.png'
+import nahidraz from '../../../public/images/nraz.png'
 import Image from "next/image";
 import { FaDownload } from "react-icons/fa6";
 
@@ -31,7 +31,7 @@ const Banner = () => {
                 </div>
             </div>
             <div>
-                <Image src={nahidraz} alt="Nahid Raz" className="border-b-2 border-primary-purple"></Image>
+                <Image src={nahidraz} alt="Nahid Raz" className="border-b-2 border-primary-purple drop-shadow-2xl"></Image>
             </div>
         </div>
     );
