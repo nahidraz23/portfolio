@@ -13,6 +13,7 @@
 body {
   background-color: #911db8;
   background-image: linear-gradient(225deg, #1c0d21 0%, #321649 50%, #080d3c 100%);
+  scrollbar-color: white;
   
 }
 
@@ -25,4 +26,14 @@ body {
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Edge */
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: white;
+  transform-origin: 0%;
 }
