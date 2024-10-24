@@ -56,13 +56,13 @@ const Navbar = () => {
                 </div>
                 <div className='flex items-center gap-2 font-bold text-white'>
                     <div>
-                        <Image src={logo} alt='Nahid Raz logo'></Image>
+                        <Image src={logo} alt='Nahid Raz logo' className='md:w-8'></Image>
                     </div>
-                    <Link href={'/'} className="text-xl font-fira-code text-white">Nahid Raz</Link>
+                    <Link href={'/'} className="md:text-3xl font-fira-code text-white">Nahid Raz</Link>
                 </div>
             </div>
             <div className="navbar-end hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 space-x-8">
+                <ul className="menu menu-horizontal px-1 space-x-8 md:text-xl">
                     {
                        navLinks.map(link => <Link key={link.path} href={link.path} className={`${pathName === link.path && 'text-white font-bold border-b-2'}`}>{link.title}</Link>)
                     }

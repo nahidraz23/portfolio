@@ -14,10 +14,12 @@ const SectionTitle = ({ title, buttonText }) => {
                 {
                     buttonText &&
                     <Link href={'/work'}>
-                        <button className='text-white text-xl flex items-center gap-2 hover:text-lg hover:font-medium'>
-                            {buttonText}
-                            <FaArrowRight></FaArrowRight>
-                        </button>
+                        <div>
+                            <button className='text-white text-xl flex items-center gap-2 hover:font-medium hover:translate-x-1'>
+                                {buttonText}
+                                <FaArrowRight className=""></FaArrowRight>
+                            </button>
+                        </div>
                     </Link>
                 }
             </div>
