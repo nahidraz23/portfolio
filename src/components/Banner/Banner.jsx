@@ -1,24 +1,28 @@
+import { useMotionValueEvent, useScroll } from "framer-motion";
 import Link from "next/link";
-import nahidraz from '../../../public/images/nahidrazcover.png'
-import Image from "next/image";
+import { useState } from "react";
 import { FaDownload } from "react-icons/fa6";
 import { IoIosCall } from "react-icons/io";
 import Typewriter from 'typewriter-effect';
 
 const Banner = () => {
+    const { scrollY } = useScroll()
+    const[scroll, setScroll] = useState(0)
 
-    ;
+    useMotionValueEvent(scrollY, "change", (latest) => {
+        setScroll(latest)
+    })
 
     return (
-        <div className="flex flex-col-reverse md:flex-row items-center justify-between">
-            <div className="flex flex-col gap-8">
+        <div className="flex flex-col items-center justify-between md:h-[720px]">
+            <div className="flex flex-col gap-8 md:py-32 justify-center py-40">
                 <div>
-                    <div className="font-semibold text-2xl md:text-5xl mt-6 md:mt-0 space-y-3">
+                    <div className="font-semibold text-2xl md:text-8xl md:space-y-5">
                         <p>I am <span className="text-primary-purple">Nahiduzzaman Raz</span></p>
                         <p><span className="text-primary-purple">Nahid Raz</span> in short</p>
                     </div>
                 </div>
-                <div className="flex gap-2 md:text-2xl">
+                <div className="flex gap-2 md:text-4xl">
                     <p>I create</p>
                     <Typewriter
                         options={{
@@ -48,9 +52,21 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-            <div>
-                <Image src={nahidraz} alt="Nahid Raz" className="border-b-2 border-primary-purple drop-shadow-2xl"></Image>
-            </div>
+            {
+                scroll > 0
+                    ?
+                    <>
+                    
+                    </>
+                    :
+                    <div className="flex flex-col items-end md:py-20">
+                        <h1>Scroll Down</h1>
+                        <div className="">
+                            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                            <lottie-player src="https://lottie.host/4d7562fe-0e55-4e92-ad54-d5bd04968e01/YOPiOxNsm5.json" background="##000000" speed="1" style={{ width: "100px", height: "100px" }} loop autoplay direction="1" mode="normal"></lottie-player>
+                        </div>
+                    </div>
+            }
         </div>
     );
 };
