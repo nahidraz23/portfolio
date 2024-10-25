@@ -15,7 +15,7 @@ const Banner = () => {
 
     return (
         <div className="flex flex-col items-center justify-between md:h-[720px]">
-            <div className="flex flex-col gap-8 md:py-32 justify-center py-40">
+            <div className="flex flex-col gap-8 md:py-28 justify-center py-40">
                 <div>
                     <div className="font-semibold text-2xl md:text-8xl md:space-y-5">
                         <p>I am <span className="text-primary-purple">Nahiduzzaman Raz</span></p>
