@@ -30,7 +30,9 @@ const Banner = () => {
                             autoStart: true,
                             loop: true,
                             cursor: '_',
-                            cursorClassName: "Typewriter__cursor"
+                            cursorClassName: "Typewriter__cursor",
+                            deleteSpeed: 20,
+                            delay: 25,
                         }} />
                 </div>
                 <div className="flex gap-4">
