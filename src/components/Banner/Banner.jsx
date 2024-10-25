@@ -62,7 +62,7 @@ const Banner = () => {
                     <div className="flex flex-col items-end md:py-20">
                         <h1>Scroll Down</h1>
                         <div className="">
-                            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" async/>
                             <lottie-player src="https://lottie.host/4d7562fe-0e55-4e92-ad54-d5bd04968e01/YOPiOxNsm5.json" background="##000000" speed="1" style={{ width: "100px", height: "100px" }} loop autoplay direction="1" mode="normal"></lottie-player>
                         </div>
                     </div>
