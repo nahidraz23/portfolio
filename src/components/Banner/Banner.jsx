@@ -1,5 +1,5 @@
 import Link from "next/link";
-import nahidraz from '../../../public/images/nraz.png'
+import nahidraz from '../../../public/images/nahidrazcover.png'
 import Image from "next/image";
 import { FaDownload } from "react-icons/fa6";
 import { IoIosCall } from "react-icons/io";
