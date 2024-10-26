@@ -18,7 +18,7 @@ const Banner = () => {
             <div className="flex flex-col gap-8 md:py-16 justify-center py-40">
                 <div>
                     <div className="font-semibold text-2xl md:text-8xl md:space-y-5">
-                        <p className="text-4xl"><span>Hi, I am</span></p>
+                        <p className="text-lg md:text-4xl"><span>Hi, I am</span></p>
                         <p><span className="font-normal font-monoton text-primary-purple tracking-widest">Nahiduzzaman Raz</span></p>
                         <p><span className="text-primary-purple font-monoton font-normal tracking-widest">Nahid Raz</span> <span className="line-through text-2xl md:text-5xl"> in short</span></p>
                     </div>
