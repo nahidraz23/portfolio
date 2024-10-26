@@ -7,7 +7,7 @@ import Typewriter from 'typewriter-effect';
 
 const Banner = () => {
     const { scrollY } = useScroll()
-    const[scroll, setScroll] = useState(0)
+    const [scroll, setScroll] = useState(0)
 
     useMotionValueEvent(scrollY, "change", (latest) => {
         setScroll(latest)
@@ -15,18 +15,18 @@ const Banner = () => {
 
     return (
         <div className="flex flex-col items-center justify-between md:h-[720px]">
-            <div className="flex flex-col gap-8 md:py-28 justify-center py-40">
+            <div className="flex flex-col gap-8 md:py-16 justify-center py-40">
                 <div>
                     <div className="font-semibold text-2xl md:text-8xl md:space-y-5">
-                        <p>I am <span className="text-primary-purple">Nahiduzzaman Raz</span></p>
-                        <p><span className="text-primary-purple">Nahid Raz</span> in short</p>
+                        <p className="">Hi<span className="text-white">,</span></p>
+                        <p>I am <span className="font-normal font-monoton text-primary-purple">Nahiduzzaman Raz</span></p>
+                        <p><span className="text-primary-purple font-monoton font-normal">Nahid Raz</span> in short</p>
                     </div>
                 </div>
-                <div className="flex gap-2 md:text-4xl">
-                    <p>I create</p>
+                <div className="md:text-4xl">
                     <Typewriter
                         options={{
-                            strings: ['responsive websites.', ' interactive web experiences.', 'solutions where technology meets creativity.'],
+                            strings: ['I create responsive websites.', 'I create interactive web experiences.', 'I create solutions where technology meets creativity.'],
                             autoStart: true,
                             loop: true,
                             cursor: '_',
@@ -57,14 +57,18 @@ const Banner = () => {
             {
                 scroll > 0
                     ?
-                    <>
-                    
-                    </>
+                    <div className="flex flex-col items-end md:py-20 opacity-30 ease-linear">
+                        <h1>Scroll Down</h1>
+                        <div className="">
+                            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" async />
+                            <lottie-player src="https://lottie.host/4d7562fe-0e55-4e92-ad54-d5bd04968e01/YOPiOxNsm5.json" background="##000000" speed="1" style={{ width: "100px", height: "100px" }} loop autoplay direction="1" mode="normal"></lottie-player>
+                        </div>
+                    </div>
                     :
                     <div className="flex flex-col items-end md:py-20">
                         <h1>Scroll Down</h1>
                         <div className="">
-                            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" async/>
+                            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" async />
                             <lottie-player src="https://lottie.host/4d7562fe-0e55-4e92-ad54-d5bd04968e01/YOPiOxNsm5.json" background="##000000" speed="1" style={{ width: "100px", height: "100px" }} loop autoplay direction="1" mode="normal"></lottie-player>
                         </div>
                     </div>
