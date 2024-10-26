@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
 
-   const pathName = usePathname();
+    const pathName = usePathname();
 
     const navLinks = [
         {
@@ -50,21 +50,23 @@ const Navbar = () => {
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-6 shadow">
                         {
-                             navLinks.map(link => <Link className={`p-2 md:p-0 ${pathName === link.path && 'text-white font-bold border-b-2 border-primary-purple'}`} key={link.path} href={link.path}>{link.title}</Link>)
+                            navLinks.map(link => <Link className={`p-2 md:p-0 ${pathName === link.path && 'text-white font-bold border-b-2 border-primary-purple'}`} key={link.path} href={link.path}>{link.title}</Link>)
                         }
                     </ul>
                 </div>
-                <div className='flex items-center gap-2 font-bold text-white'>
+                <div className='flex items-center gap-2 font-bold text-white w-full'>
                     <div>
-                        <Image src={logo} alt='Nahid Raz logo' className='md:w-8'></Image>
+                        <Link href={'/'}>
+                            <Image src={logo} alt='Nahid Raz logo' className='w-6 md:w-10'></Image>
+                        </Link>
                     </div>
-                    <Link href={'/'} className="md:text-3xl font-fira-code text-white">Nahid Raz</Link>
+                    <Link href={'/'} className=" text-xl font-fira-code text-white md:hidden">Nahid Raz</Link>
                 </div>
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 space-x-8 md:text-xl">
                     {
-                       navLinks.map(link => <Link key={link.path} href={link.path} className={`${pathName === link.path && 'text-white font-bold border-b-2 border-primary-purple'}`}>{link.title}</Link>)
+                        navLinks.map(link => <Link key={link.path} href={link.path} className={`${pathName === link.path && 'text-white font-bold border-b-2 border-primary-purple'}`}>{link.title}</Link>)
                     }
                 </ul>
             </div>
