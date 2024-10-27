@@ -1,4 +1,4 @@
-import { useMotionValueEvent, useScroll } from "framer-motion";
+import { color, useMotionValueEvent, useScroll } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 import { FaDownload } from "react-icons/fa6";
@@ -19,8 +19,8 @@ const Banner = () => {
                 <div>
                     <div className="font-semibold text-2xl md:text-8xl md:space-y-5">
                         <p className="text-lg md:text-4xl font-light"><span>Hi, I am</span></p>
-                        <p><span className="font-normal font-monoton text-primary-purple tracking-widest custom">Nahiduzzaman Raz</span></p>
-                        <p><span className="text-primary-purple font-monoton font-normal tracking-widest custom">Nahid Raz</span> <span className="line-through text-2xl md:text-5xl font-light"> in short</span></p>
+                        <p><span className="font-normal font-monoton text-primary-purple tracking-widest custom"><span className="text-white font-monoton">N</span>ahiduzzaman <span className="text-white font-monoton">R</span>az</span></p>
+                        <p><span className="text-primary-purple font-monoton font-normal tracking-widest custom"><span className="text-white font-monoton">N</span>ahid <span className="text-white font-monoton">R</span>az</span> <span className="line-through text-2xl md:text-5xl font-light"> in short</span></p>
                     </div>
                 </div>
                 <div className="md:text-4xl font-light">
@@ -58,18 +58,16 @@ const Banner = () => {
                 scroll > 0
                     ?
                     <div className="flex flex-col items-end md:py-20 opacity-30 ease-linear">
-                        <h1>Scroll Down</h1>
                         <div className="">
                             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" async />
-                            <lottie-player src="https://lottie.host/4d7562fe-0e55-4e92-ad54-d5bd04968e01/YOPiOxNsm5.json" background="##000000" speed="1" style={{ width: "100px", height: "100px" }} loop autoplay direction="1" mode="normal"></lottie-player>
+                            <lottie-player src="https://lottie.host/3fd9ebcf-7ae3-4cb3-9fb4-0eea7c68a276/dEEyruQ6wP.json" background="##000000" speed="1" style={{ width: "100px", height: "130px" }} loop autoplay direction="1" mode="normal"></lottie-player>
                         </div>
                     </div>
                     :
                     <div className="flex flex-col items-end md:py-20">
-                        <h1>Scroll Down</h1>
                         <div className="">
                             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" async />
-                            <lottie-player src="https://lottie.host/4d7562fe-0e55-4e92-ad54-d5bd04968e01/YOPiOxNsm5.json" background="##000000" speed="1" style={{ width: "100px", height: "100px" }} loop autoplay direction="1" mode="normal"></lottie-player>
+                            <lottie-player src="https://lottie.host/3fd9ebcf-7ae3-4cb3-9fb4-0eea7c68a276/dEEyruQ6wP.json" background="##000000" speed="1" style={{ width: "100px", height: "130px" }} loop autoplay direction="1" mode="normal"></lottie-player>
                         </div>
                     </div>
             }
