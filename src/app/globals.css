@@ -34,6 +34,7 @@ body {
   ); */
   background: #FFEAE3;
   transform-origin: 0%;
+  z-index: 80;
 }
 
 .Typewriter__cursor {
