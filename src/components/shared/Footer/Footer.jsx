@@ -5,6 +5,7 @@ import logo from '../../../app/icon.ico'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import Link from 'next/link';
+// import footerbg from '../../../../public/images/footerbg.svg'
 
 const Footer = () => {
 
