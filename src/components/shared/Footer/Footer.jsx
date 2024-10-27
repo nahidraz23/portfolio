@@ -1,23 +1,21 @@
-"use client"
+// "use client"
 import Image from 'next/image';
 import React from 'react';
 import logo from '../../../app/icon.ico'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import Link from 'next/link';
-// import footerbg from '../../../../public/images/footerbg.svg'
 
 const Footer = () => {
 
     return (
-        <div className='md:mt-36 footer-bg'>
-            <hr className='border-1 border-white' />
+        <div className='md:mt-36 footer-bg md:h-64'>
+            <hr className='border-none' />
             <div className='container mx-auto mt-8 flex flex-col md:flex-row items-center justify-between'>
                 <div className='space-y-4'>
                     <div className='flex flex-col items-center gap-2'>
                         <div>
                             <Image src={logo} alt='Nahid Raz logo' className='w-8'></Image>
-                            {/* <h1 className="text-xl font-fira-code text-white">Nahid Raz</h1> */}
                         </div>
                         <p>nzamanraz@gmail.com</p>
                     </div>
@@ -40,7 +38,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='mt-6 text-center pb-8'>
+            <div className='mt-6 md:mt-16 text-center pb-8'>
                 <p>Copyright <span className='text-white'>&copy;</span>2024. Made by <span className='text-white'>Nahid Raz</span></p>
             </div>
         </div>
