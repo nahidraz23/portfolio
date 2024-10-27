@@ -60,14 +60,14 @@ const Banner = () => {
                     <div className="flex flex-col items-end md:py-20 opacity-30 ease-linear">
                         <div className="">
                             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" async />
-                            <lottie-player src="https://lottie.host/3fd9ebcf-7ae3-4cb3-9fb4-0eea7c68a276/dEEyruQ6wP.json" background="##000000" speed="1" style={{ width: "100px", height: "130px" }} loop autoplay direction="1" mode="normal"></lottie-player>
+                            <lottie-player src="https://lottie.host/3fd9ebcf-7ae3-4cb3-9fb4-0eea7c68a276/dEEyruQ6wP.json" background="##000000" speed="1" style={{ width: "50px", height: "100px" }} loop autoplay direction="1" mode="normal"></lottie-player>
                         </div>
                     </div>
                     :
                     <div className="flex flex-col items-end md:py-20">
                         <div className="">
                             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" async />
-                            <lottie-player src="https://lottie.host/3fd9ebcf-7ae3-4cb3-9fb4-0eea7c68a276/dEEyruQ6wP.json" background="##000000" speed="1" style={{ width: "100px", height: "130px" }} loop autoplay direction="1" mode="normal"></lottie-player>
+                            <lottie-player src="https://lottie.host/3fd9ebcf-7ae3-4cb3-9fb4-0eea7c68a276/dEEyruQ6wP.json" background="##000000" speed="1" style={{ width: "50px", height: "100px" }} loop autoplay direction="1" mode="normal"></lottie-player>
                         </div>
                     </div>
             }
