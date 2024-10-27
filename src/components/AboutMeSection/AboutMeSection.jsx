@@ -20,7 +20,7 @@ const AboutMeSection = () => {
     return (
         <div>
             <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                <SectionTitle title={"About-me"}></SectionTitle>
+                <SectionTitle title={"About me"}></SectionTitle>
             </div>
             <div className="space-y-2 md:w-1/2" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1300">
                 <p>
