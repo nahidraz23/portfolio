@@ -23,7 +23,7 @@ const Banner = () => {
                         <p><span className="text-primary-purple font-monoton font-normal tracking-widest custom"><span className="text-white font-monoton">N</span>ahid <span className="text-white font-monoton">R</span>az</span> <span className="line-through text-2xl md:text-5xl font-light"> in short</span></p>
                     </div>
                 </div>
-                <div className="md:text-4xl font-light">
+                <div className="md:text-3xl font-light">
                     <Typewriter
                         options={{
                             strings: ['I create responsive websites.', 'I create interactive web experiences.', 'I create solutions where technology meets creativity.'],

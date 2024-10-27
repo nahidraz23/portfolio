@@ -10,15 +10,15 @@ import Link from 'next/link';
 const Footer = () => {
 
     return (
-        <div className='md:mt-36'>
-            <hr className='border-1 border-primary-gray' />
+        <div className='md:mt-36 footer-bg'>
+            <hr className='border-1 border-white' />
             <div className='container mx-auto mt-8 flex flex-col md:flex-row items-center justify-between'>
                 <div className='space-y-4'>
-                    <div className='flex items-center gap-2'>
+                    <div className='flex flex-col items-center gap-2'>
                         <div>
-                            <Image src={logo} alt='Nahid Raz logo'></Image>
+                            <Image src={logo} alt='Nahid Raz logo' className='w-8'></Image>
+                            {/* <h1 className="text-xl font-fira-code text-white">Nahid Raz</h1> */}
                         </div>
-                        <h1 className="text-xl font-fira-code text-white">Nahid Raz</h1>
                         <p>nzamanraz@gmail.com</p>
                     </div>
                     <div>
@@ -26,11 +26,11 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className=''>
-                    <p className='text-2xl font-medium text-white'>Media</p>
-                    <div className='flex items-center gap-2 pt-1'>
+                    {/* <p className='text-2xl font-medium text-white'>Media</p> */}
+                    <div className='flex items-center gap-4 pt-1'>
                         {/* GitHub logo */}
                         <Link target='_blank' href={"https://github.com/nahidraz23"} >
-                            <FaGithub  className='text-2xl hover:text-purple-600'></FaGithub>
+                            <FaGithub className='text-2xl hover:text-purple-600'></FaGithub>
                         </Link>
 
                         {/* Linkdein */}
@@ -40,8 +40,8 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='mt-12 text-center pb-8'>
-                <p>© Copyright 2024. Made by <span className='text-white'>Nahid Raz</span></p>
+            <div className='mt-6 text-center pb-8'>
+                <p>Copyright <span className='text-white'>&copy;</span>2024. Made by <span className='text-white'>Nahid Raz</span></p>
             </div>
         </div>
     );
