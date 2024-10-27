@@ -1,9 +1,10 @@
-import { color, useMotionValueEvent, useScroll } from "framer-motion";
+import { useMotionValueEvent, useScroll } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 import { FaDownload } from "react-icons/fa6";
 import { IoIosCall } from "react-icons/io";
 import Typewriter from 'typewriter-effect';
+import ShimmerButton from "@/components/ui/shimmer-button";
 
 const Banner = () => {
     const { scrollY } = useScroll()
@@ -23,7 +24,7 @@ const Banner = () => {
                         <p><span className="text-primary-purple font-monoton font-normal tracking-widest custom"><span className="text-white font-monoton">N</span>ahid <span className="text-white font-monoton">R</span>az</span> <span className="line-through text-2xl md:text-5xl font-light"> in short</span></p>
                     </div>
                 </div>
-                <div className="md:text-3xl font-light">
+                <div className="md:text-2xl font-light">
                     <Typewriter
                         options={{
                             strings: ['I create responsive websites.', 'I create interactive web experiences.', 'I create solutions where technology meets creativity.'],
@@ -38,18 +39,23 @@ const Banner = () => {
                 <div className="flex gap-4">
                     <div>
                         <Link href={'/contacts'}>
-                            <button className="flex items-center gap-1 text-white border-2 px-2 py-1 border-primary-purple hover:border-white hover:scale-90 hover:text-white hover:font-semibold">
+                            <ShimmerButton className="shadow-2xl flex gap-2">
                                 <IoIosCall></IoIosCall>
-                                Contact Me
-                            </button>
+                                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                                    Contact Me
+                                </span>
+                            </ShimmerButton>
+
                         </Link>
                     </div>
                     <div>
                         <a href='/Nahiduzzaman_Raz_Resume.pdf' className="" rel="noopener noreferrer" download>
-                            <button className="text-white flex items-center gap-2 border-2 px-2 py-1 border-primary-purple hover:border-white hover:scale-90 hover:text-white hover:font-semibold">
-                                <p className="text-white">Resume</p>
+                            <ShimmerButton className="shadow-2xl flex gap-2">
+                                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                                    Get Resume
+                                </span>
                                 <FaDownload className=""></FaDownload>
-                            </button>
+                            </ShimmerButton>
                         </a>
                     </div>
                 </div>

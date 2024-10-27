@@ -1,12 +1,14 @@
 import Image from "next/image";
-import LiveButton from "../shared/LiveButton/LiveButton";
-import GitHubButton from "../shared/GitHubButton/GitHubButton";
+import ShinyButton from "@/components/ui/shiny-button";
+import { BorderBeam } from "@/components/ui/border-beam";
 
 const ProjectCard = ({ title, src, subTitle, liveLink, gitLink, tech }) => {
     return (
-        <div className="border-b-2 w-80 hover:border-white hover:cursor-pointer hover:scale-105">
-            <Image src={src} alt="Project thumbnail" className=" w-80 h-52 border-b-2"></Image>
-            <div className="py-4 px-2 mb-2 border-b-2">
+        <div className="relative flex h-[400px] w-96 flex-col items-center justify-center overflow-hidden rounded-lg md:shadow-xl">
+            <div>
+                <Image src={src} alt="Project thumbnail" className=" w-full h-52 rounded-xl"></Image>
+            </div>
+            <div className="py-4 px-2 mb-2 border-b-2 border-white">
                 <p className="text-white text-2xl font-medium">{title}</p>
             </div>
             <div className="space-y-4">
@@ -18,11 +20,16 @@ const ProjectCard = ({ title, src, subTitle, liveLink, gitLink, tech }) => {
                 <p className="px-2">
                     {tech}
                 </p>
-                <div className="flex gap-4 pl-2 pb-4">
-                    <a href={liveLink} target="_blank"><LiveButton></LiveButton></a>
-                    <a href={gitLink} target="_blank"><GitHubButton></GitHubButton></a>
+                <div className="flex justify-between">
+                    <a href={liveLink} target="_blank">
+                        <ShinyButton>Live</ShinyButton>
+                    </a>
+                    <a href={gitLink} target="_blank">
+                        <ShinyButton>GitHub</ShinyButton>
+                    </a>
                 </div>
             </div>
+            <BorderBeam size={250} duration={12} delay={9} />
         </div>
     );
 };

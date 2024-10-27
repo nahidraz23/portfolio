@@ -5,6 +5,7 @@ import Link from "next/link";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import ShimmerButton from "../ui/shimmer-button";
 
 const ContactSection = () => {
     useEffect(() => {
@@ -50,12 +51,18 @@ const ContactSection = () => {
             </div>
             <div className="mt-6 md:mt-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="2500">
                 <Link href={'/contacts'} className="">
-                    <button className="flex gap-2 items-center border-2 px-2 py-1 border-primary-purple hover:border-white hover:scale-90 hover:font-semibold">
+                    {/* <button className="flex gap-2 items-center border-2 px-2 py-1 border-primary-purple hover:border-white hover:scale-90 hover:font-semibold">
                         <p className="text-white">Get in touch</p>
                         <div>
                             <FaArrowRight></FaArrowRight>
                         </div>
-                    </button>
+                    </button> */}
+                    <ShimmerButton className="flex gap-2 shadow-2xl">
+                        <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                            Get in touch
+                        </span>
+                        <FaArrowRight></FaArrowRight>
+                    </ShimmerButton>
                 </Link>
             </div>
         </div >

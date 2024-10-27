@@ -5,6 +5,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import ShimmerButton from "@/components/ui/shimmer-button";
 
 const AboutMeSection = () => {
     useEffect(() => {
@@ -35,12 +36,18 @@ const AboutMeSection = () => {
             </div>
             <div className="mt-6 " data-aos="fade-right" data-aos-delay="200" data-aos-duration="1600">
                 <Link href={'/about'} className="">
-                    <button className="flex gap-2 items-center border-2 px-2 py-1 border-primary-purple hover:border-white hover:scale-90">
+                    {/* <button className="flex gap-2 items-center border-2 px-2 py-1 border-primary-purple hover:border-white hover:scale-90">
                         <p className="text-white">Read more</p>
                         <div>
                             <FaArrowRight></FaArrowRight>
                         </div>
-                    </button>
+                    </button> */}
+                    <ShimmerButton className="flex gap-2 shadow-2xl">
+                        <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                            Read More
+                        </span>
+                        <FaArrowRight></FaArrowRight>
+                    </ShimmerButton>
                 </Link>
             </div>
         </div>
