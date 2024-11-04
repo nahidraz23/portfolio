@@ -5,7 +5,8 @@ import AnimatedCursor from 'react-animated-cursor'
 
 export const metadata = {
   title: 'Nahid Raz',
-  description: 'Nahiduzzaman Raz Portfolio'
+  description: 'Nahid Raz Portfolio',
+  keywords: ['nahid', 'Nahid', 'NahidRaz', 'nahidraz23', 'Portfolio', 'Raz', 'Nahid Raz Portfolio', 'Nahiduzzaman Raz', 'Nahiduzzaman']
 }
 
 export default function RootLayout ({ children }) {
