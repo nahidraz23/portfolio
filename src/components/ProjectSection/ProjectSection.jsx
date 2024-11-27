@@ -38,7 +38,7 @@ const ProjectSection = () => {
           gitLink={"https://github.com/nahidraz23/traverse-client"}
         ></ProjectCard>
         <ProjectCard
-          title={"United Ulift"}
+          title={"United Uplift"}
           subTitle={"Volunteer Management website"}
           src={UnitedUplift}
           liveLink={"https://united-uplift.web.app/"}
