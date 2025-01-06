@@ -35,14 +35,6 @@ const SkillSection = () => {
 
     const skills = [
         {
-            img: html5logo,
-            name: 'HTML5'
-        },
-        {
-            img: css3,
-            name: 'CSS3'
-        },
-        {
             img: cprogramming,
             name: 'C Programming'
         },
@@ -51,12 +43,40 @@ const SkillSection = () => {
             name: 'C++'
         },
         {
+            img: html5logo,
+            name: 'HTML5'
+        },
+        {
+            img: css3,
+            name: 'CSS3'
+        },
+        {
+            img: TailwindCSSlogo,
+            name: 'TailwindCSS'
+        },
+        {
             img: jslogo,
             name: 'JavaScript'
         },
         {
+            img: reactjslogo,
+            name: 'ReactJS'
+        },
+        {
+            img: nextjslogo,
+            name: 'NextJS'
+        },
+        {
             img: nodejslogo,
             name: 'NodeJS'
+        },
+        {
+            img: expressjslogo,
+            name: 'ExpressJS'
+        },
+        {
+            img: mongodblogo,
+            name: 'MongoDB'
         },
         {
             img: gitlogo,
@@ -67,16 +87,8 @@ const SkillSection = () => {
             name: 'GitHub'
         },
         {
-            img: reactjslogo,
-            name: 'ReactJS'
-        },
-        {
             img: vercellogo,
             name: 'Vercel'
-        },
-        {
-            img: TailwindCSSlogo,
-            name: 'TailwindCSS'
         },
         {
             img: figmalogo,
@@ -85,18 +97,6 @@ const SkillSection = () => {
         {
             img: vscodelogo,
             name: 'VSCode'
-        },
-        {
-            img: nextjslogo,
-            name: 'NextJS'
-        },
-        {
-            img: expressjslogo,
-            name: 'ExpressJS'
-        },
-        {
-            img: mongodblogo,
-            name: 'MongoDB'
         },
         {
             img: firebaselogo,
