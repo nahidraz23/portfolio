@@ -104,14 +104,12 @@ const SkillSection = () => {
         },
     ];
 
-    const firstRow = skills.slice(0, skills.length);
-
     return (
         <div className="mt-0 md:mt-4 lg:m-8">
             <div className="grid grid-cols-1 gap-4" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1500">
                 <div className="relative flex h-[200px] w-full flex-col items-center justify-center overflow-hidden rounded-lg">
                     <Marquee pauseOnHover className="[--duration:50s]">
-                        {firstRow.map((skill, index) => (
+                        {skills.map((skill, index) => (
                             <SkillsCard key={index} {...skill} />
                         ))}
                     </Marquee>
