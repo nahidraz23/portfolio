@@ -14,14 +14,14 @@ const HomePage = () => {
                 <Banner></Banner>
             </section>
 
+             {/* Skills section */}
+             <section>
+                <SkillSection></SkillSection>
+            </section>
+
             {/* Projects section */}
             <section>
                 <ProjectSection></ProjectSection>
-            </section>
-
-            {/* Skills section */}
-            <section>
-                <SkillSection></SkillSection>
             </section>
 
             {/* About me section */}
@@ -30,9 +30,9 @@ const HomePage = () => {
             </section>
 
             {/* Education section */}
-            <section>
+            {/* <section>
                 <EducationSection></EducationSection>
-            </section>
+            </section> */}
 
             {/* Contact section */}
             <section>

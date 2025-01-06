@@ -16,7 +16,7 @@ export default function RootLayout ({ children }) {
       <body className='scroller'>
         <AnimatedCursor
           innerSize={8}
-          outerSize={35}
+          outerSize={40}
           innerScale={1}
           outerScale={2}
           outerAlpha={0}
@@ -25,9 +25,9 @@ export default function RootLayout ({ children }) {
             backgroundColor: 'white'
           }}
           outerStyle={{
-            border: '3px solid white'
+            border: '1px solid white'
           }}
-          trailingSpeed={10}
+          trailingSpeed={5}
         />
         <div className='container mx-auto'>
           <Navbar></Navbar>
