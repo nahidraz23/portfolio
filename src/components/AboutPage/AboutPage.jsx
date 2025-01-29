@@ -22,7 +22,8 @@ const AboutPage = () => {
                     My eventual <strong className='text-white'>career goal</strong> is to become a qualified and experienced <strong className='text-white'>software engineer</strong>.
                 </p>
             </div>
-            <div className='space-y-6 md:space-y-12'>
+            {/* Skills Section */}
+            {/* <div className='space-y-6 md:space-y-12'>
                 <div>
                     <p className="text-3xl font-semibold text-white"><span className="text-primary-purple">#</span>Skills</p>
                 </div>
@@ -48,7 +49,7 @@ const AboutPage = () => {
                         tech={"VSCode Figma Git GitHub Vercel Firebase"}
                     ></SkillsCard>
                 </div>
-            </div>
+            </div> */}
             <div className='space-y-6'>
                 <div>
                     <p className="text-3xl font-semibold text-white"><span className="text-primary-purple">#</span>My-fun-facts</p>
