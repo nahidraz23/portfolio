@@ -81,7 +81,7 @@ const Navbar = () => {
         //         </ul>
         //     </div>
         // </div>
-        <nav className="relative shadow dark:bg-gray-800">
+        <nav className="relative shadow">
             <div className="container px-6 py-5 border-b-2 border-white mx-auto md:flex">
                 <div className="flex items-center justify-between w-full md:w-auto">
                     <div className='flex items-center gap-2 font-bold text-white w-full'>
