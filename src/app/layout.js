@@ -32,7 +32,7 @@ export default function RootLayout ({ children }) {
         <div className='container mx-auto'>
           <Navbar></Navbar>
         </div>
-        <div className='min-h-[calc(100vh-270px)] container mx-auto'>
+        <div className='min-h-[calc(100vh-190px)] container mx-auto'>
           {children}
         </div>
         <Footer></Footer>

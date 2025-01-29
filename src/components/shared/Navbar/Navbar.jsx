@@ -81,16 +81,72 @@ const Navbar = () => {
         //         </ul>
         //     </div>
         // </div>
-        <nav className="relative shadow">
-            <div className="container px-6 py-5 border-b-2 border-white mx-auto md:flex">
+        // <nav className="relative shadow">
+        //     <div className="container px-6 py-5 border-b-2 border-white mx-auto md:flex">
+        //         <div className="flex items-center justify-between w-full md:w-auto">
+        //             <div className='flex items-center gap-2 font-bold text-white w-full'>
+        //                 <div>
+        //                     <Link href={'/'}>
+        //                         <Image src={logo} alt='Nahid Raz logo' className='w-6 md:w-10'></Image>
+        //                     </Link>
+        //                 </div>
+        //                 <Link href={'/'} className=" text-xl font-fira-code text-white md:hidden">Nahid Raz</Link>
+        //             </div>
+        //             <div className="flex md:hidden">
+        //                 <button
+        //                     onClick={() => setIsOpen(!isOpen)}
+        //                     className="text-white dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none"
+        //                     aria-label="Toggle menu"
+        //                 >
+        //                     {isOpen ? (
+        //                         <svg
+        //                             xmlns="http://www.w3.org/2000/svg"
+        //                             className="w-6 h-6"
+        //                             fill="none"
+        //                             viewBox="0 0 24 24"
+        //                             stroke="currentColor"
+        //                             strokeWidth={2}
+        //                         >
+        //                             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+        //                         </svg>
+        //                     ) : (
+        //                         <svg
+        //                             xmlns="http://www.w3.org/2000/svg"
+        //                             className="w-6 h-6"
+        //                             fill="none"
+        //                             viewBox="0 0 24 24"
+        //                             stroke="currentColor"
+        //                             strokeWidth={2}
+        //                         >
+        //                             <path strokeLinecap="round" strokeLinejoin="round" d="M4 8h16M4 16h16" />
+        //                         </svg>
+        //                     )}
+        //                 </button>
+        //             </div>
+        //         </div>
+
+        //         <div
+        //             className={`absolute top-20 md:top-0 inset-x-0 z-20 w-full px-6 py-4 bg-gray-700 md:bg-transparent md:relative md:opacity-100 md:translate-x-0 md:flex md:items-center md:justify-between transition-all duration-300 ease-in-out ${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full md:opacity-100'
+        //                 }`}
+        //         >
+        //             <div className="flex flex-col md:flex-row justify-end w-full gap-10">
+        //                 {
+        //                     navLinks.map(link => <Link key={link.path} href={link.path} className={`${pathName === link.path && 'text-white font-bold border-b-2 border-primary-purple'}`}>{link.title}</Link>)
+        //                 }
+        //             </div>
+        //         </div>
+        //     </div>
+        // </nav>
+        <nav className="fixed left-0 top-0 border-b-2 border-white w-full shadow backdrop-blur-xl z-50">
+            <div className="container px-6 py-8 mx-auto md:flex">
                 <div className="flex items-center justify-between w-full md:w-auto">
                     <div className='flex items-center gap-2 font-bold text-white w-full'>
                         <div>
                             <Link href={'/'}>
-                                <Image src={logo} alt='Nahid Raz logo' className='w-6 md:w-10'></Image>
+                                <Image src={logo} alt='Nahid Raz logo' className='w-6 md:w-10' width={40} height={40} />
                             </Link>
                         </div>
-                        <Link href={'/'} className=" text-xl font-fira-code text-white md:hidden">Nahid Raz</Link>
+                        <Link href={'/'} className="text-xl font-fira-code text-white md:hidden">Nahid Raz</Link>
                     </div>
                     <div className="flex md:hidden">
                         <button
@@ -126,12 +182,11 @@ const Navbar = () => {
                 </div>
 
                 <div
-                    className={`absolute top-20 md:top-0 inset-x-0 z-20 w-full px-6 py-4 bg-gray-700 md:bg-transparent md:relative md:opacity-100 md:translate-x-0 md:flex md:items-center md:justify-between transition-all duration-300 ease-in-out ${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full md:opacity-100'
-                        }`}
+                    className={`absolute top-20 md:top-0 inset-x-0 z-20 w-full px-6 py-4 bg-primary-purple backdrop-blur-xl md:bg-transparent md:relative md:opacity-100 md:translate-x-0 md:flex md:items-center md:justify-between transition-all duration-300 ease-in-out ${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full md:opacity-100'}`}
                 >
-                    <div className="flex flex-col md:flex-row justify-end w-full gap-10">
+                    <div className="flex flex-col md:flex-row justify-end w-full gap-10 text-lg text-black md:text-white">
                         {
-                            navLinks.map(link => <Link key={link.path} href={link.path} className={`${pathName === link.path && 'text-white font-bold border-b-2 border-primary-purple'}`}>{link.title}</Link>)
+                            navLinks.map(link => <Link key={link.path} href={link.path} className={`${pathName === link.path && 'md:text-primary-purple text-white text-center font-bold border-b-2 border-white md:border-none'}`}>{link.title}</Link>)
                         }
                     </div>
                 </div>

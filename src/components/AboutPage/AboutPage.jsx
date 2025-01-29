@@ -3,7 +3,7 @@ import SkillsCard from '../shared/SkillsCard/SkillsCard';
 
 const AboutPage = () => {
     return (
-        <div className='space-y-6 md:space-y-12'>
+        <div className='pt-28 space-y-6 md:space-y-12'>
             <div>
                 <p className="text-3xl font-semibold text-white"><span className="text-primary-purple">/</span>About-me</p>
                 <p className='text-white mt-4'>Who am i?</p>

@@ -1,14 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap&family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap&family=Monoton&family=Orbitron:wght@400..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-  font-family: "Fira Code", monospace;
+  /* font-family: "Fira Code", monospace; */
+  font-family: "Orbitron", serif;
   color: #abb2bf;
   border-color: #abb2bf;
   scrollbar-width: none;
+  letter-spacing: 3px;
+
   /* scrollbar-color: rgb(255, 255, 255) #210237; */
   /* background: black; */
 }
@@ -19,8 +22,7 @@ body {
   animation: pulse-light 2s infinite ease-in-out alternate; */
 }
 
-/* .light-animation {
-  /* content: "";
+.light-animation {
   position: absolute;
   top: 0;
   right: 0;
@@ -28,8 +30,8 @@ body {
   height: 100%;
   background: radial-gradient(circle at top right, rgba(23, 163, 180, 0.6), transparent 50%);
   opacity: 0;
-  animation: pulse-light 4s infinite ease-in-out;
-} */
+  animation: pulse-light 10s infinite ease-in-out;
+}
 
 
 .progress-bar {

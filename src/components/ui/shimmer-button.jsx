@@ -58,7 +58,7 @@ const ShimmerButton = React.forwardRef((
           // transition
           "transform-gpu transition-all duration-300 ease-in-out",
           // on hover
-          "group-hover:shadow-[inset_0_-6px_10px_#ffffff3f]",
+          "group-hover:shadow-[inset_0px_-8px_8px_0px#17a3b4]",
           // on click
           "group-active:shadow-[inset_0_-10px_10px_#ffffff3f]"
         )} />

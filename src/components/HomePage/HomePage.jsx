@@ -8,7 +8,7 @@ import ContactSection from '../ContactSection/ContactSection';
 
 const HomePage = () => {
     return (
-        <div className=''>
+        <div className='pt-20'>
             {/* Banner Section */}
             <section className='mt-16'>
                 <Banner></Banner>

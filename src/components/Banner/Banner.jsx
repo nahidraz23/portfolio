@@ -16,12 +16,13 @@ const Banner = () => {
 
     return (
         <div className=" flex flex-col items-center justify-between md:h-[720px]">
-            <div className="flex flex-col gap-8 md:py-16 justify-center py-40">
+            <div className="flex flex-col gap-10 md:py-24 justify-center py-40">
                 <div>
-                    <div className="font-semibold text-2xl md:text-8xl md:space-y-5">
+                    <div className="font-semibold text-2xl md:text-8xl md:space-y-10 space-y-3">
                         <p className="text-lg md:text-4xl font-light"><span>Hi, I am</span></p>
                         <p><span className="font-normal font-monoton text-primary-purple tracking-widest custom"><span className="text-white font-monoton">N</span>ahiduzzaman <span className="text-white font-monoton">R</span>az</span></p>
-                        <p><span className="text-primary-purple font-monoton font-normal tracking-widest custom"><span className="text-white font-monoton">N</span>ahid <span className="text-white font-monoton">R</span>az</span> <span className="line-through text-2xl md:text-5xl font-light"> in short</span></p>
+                        {/* <p><span className="text-primary-purple font-monoton font-normal tracking-widest custom"><span className="text-white font-monoton">N</span>ahid <span className="text-white font-monoton">R</span>az</span> <span className="line-through text-2xl md:text-5xl font-light"> in short</span></p> */}
+                        <p className="font-orbitron text-sm md:text-5xl font-light">Passionate Web Developer</p>
                     </div>
                 </div>
                 <div className="md:text-2xl font-light">

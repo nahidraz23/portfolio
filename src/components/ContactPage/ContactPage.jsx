@@ -33,7 +33,7 @@ const ContactPage = () => {
     }
 
     return (
-        <div className="">
+        <div className="pt-28">
             <div className="">
                 <p className="text-3xl font-semibold text-white"><span className="text-primary-purple">/</span>Contacts</p>
                 <p className='text-white mt-4'>Who am i?</p>

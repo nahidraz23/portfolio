@@ -8,7 +8,7 @@ import ticketsolution from "../../../public/images/ticketsolution.png";
 
 const WorkPage = () => {
     return (
-        <div className="">
+        <div className="pt-28">
             <div>
                 <p className="text-3xl font-semibold text-white"><span className="text-primary-purple">/</span>Projects</p>
                 <small>List of my projects</small>
@@ -27,7 +27,7 @@ const WorkPage = () => {
                         gitLink={"https://github.com/nahidraz23/traverse-client"}
                     ></ProjectCard>
                     <ProjectCard
-                        title={"United Ulift"}
+                        title={"United Uplift"}
                         subTitle={"Volunteer Management website"}
                         src={UnitedUplift}
                         tech={"ReactJS TailwindCSS NodeJS ExpressJS MongoDB"}

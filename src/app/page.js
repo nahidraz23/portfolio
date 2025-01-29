@@ -6,14 +6,14 @@ export default function Home () {
   const { scrollYProgress } = useScroll()
 
   return (
-    <main className='min-h-[calc(100vh-270px)] p-4 md:p-0'>
+    <main className='p-4 md:p-0'>
       <motion.div
         className='progress-bar'
         style={{ scaleX: scrollYProgress }}
       />
       <div className='light-animation'>
-        <HomePage></HomePage>
       </div>
+        <HomePage></HomePage>
     </main>
   )
 }

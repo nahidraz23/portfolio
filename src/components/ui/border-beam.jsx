@@ -5,7 +5,7 @@ export const BorderBeam = ({
   size = 200,
   duration = 15,
   anchor = 90,
-  borderWidth = 1.5,
+  borderWidth = 2.0,
   colorFrom = "#67C6E3",
   colorTo = "#fff",
   delay = 0
@@ -23,7 +23,7 @@ export const BorderBeam = ({
           "--delay": `-${delay}s`
         }
       }
-      className={cn(
+      className= {cn(
         "pointer-events-none absolute inset-0 rounded-[inherit] [border:calc(var(--border-width)*1px)_solid_transparent]",
         // mask styles
         "![mask-clip:padding-box,border-box] ![mask-composite:intersect] [mask:linear-gradient(transparent,transparent),linear-gradient(white,white)]",
