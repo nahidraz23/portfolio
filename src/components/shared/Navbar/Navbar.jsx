@@ -138,7 +138,7 @@ const Navbar = () => {
         //     </div>
         // </nav>
         <nav className="fixed left-0 top-0 border-b-2 border-white w-full shadow backdrop-blur-xl z-50">
-            <div className="container px-6 py-8 mx-auto md:flex">
+            <div className="container px-6 py-8 md:py-6 mx-auto md:flex">
                 <div className="flex items-center justify-between w-full md:w-auto">
                     <div className='flex items-center gap-2 font-bold text-white w-full'>
                         <div>

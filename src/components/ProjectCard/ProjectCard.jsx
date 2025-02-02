@@ -4,7 +4,7 @@ import { BorderBeam } from "@/components/ui/border-beam";
 
 const ProjectCard = ({ title, src, subTitle, liveLink, gitLink, tech }) => {
     return (
-        <div className="relative border-[1px] border-white/20 flex py-6 w-96 flex-col items-center justify-center overflow-hidden rounded-lg md:shadow-xl">
+        <div className="relative border-[1px] border-white/20 flex py-6 w-96 md:h-[500px] flex-col items-center justify-center overflow-hidden rounded-lg md:shadow-xl">
             <div>
                 <Image src={src} alt="Project thumbnail" className=" w-80 h-52 rounded-md"></Image>
             </div>

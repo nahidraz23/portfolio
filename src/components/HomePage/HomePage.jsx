@@ -25,9 +25,9 @@ const HomePage = () => {
             </section>
 
             {/* About me section */}
-            <section>
+            {/* <section>
                 <AboutMeSection></AboutMeSection>
-            </section>
+            </section> */}
 
             {/* Education section */}
             {/* <section>
